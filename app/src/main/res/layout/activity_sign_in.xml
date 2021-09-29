@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.SignInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="150dp"
+            android:background="@drawable/pic_four"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:text="Register"
+        android:textSize="35dp"
+        android:textColor="#31274f"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/emailInputRegisterView"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#31274f"
+        android:background="@drawable/forget"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+    <ProgressBar
+        android:id="@+id/firebaseProgressBar"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/loadingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#31274f"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/firebaseProgressBar"
+        android:layout_margin="20dp"
+        android:visibility="gone" />
+    <EditText
+        android:id="@+id/passwordInputRegisterView"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="Enter Password"
+        android:textColor="#31274f"
+        android:background="@drawable/forget"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="56dp"
+        android:text="Register"
+        android:id="@+id/goToSeeMusciFRomRegister"
+        android:background="@drawable/button"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="login instead"
+        android:textColor="#31275f"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

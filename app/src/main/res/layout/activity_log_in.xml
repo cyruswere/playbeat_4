@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.LogInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="@drawable/pic_one"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="35dp"
+        android:textColor="#31274f"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        />
+    <EditText
+        android:id="@+id/nameInputLoginView"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#31274f"
+        android:background="@drawable/forget"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/passwordInputLoginView"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textColor="#31274f"
+        android:background="@drawable/forget"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textColor="#31275f"
+        android:layout_gravity="end"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="56dp"
+        android:text="LogIn"
+        android:id="@+id/goToSeeMusicFromLogIn"
+        android:background="@drawable/button"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/registerInstead"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Register instead"
+        android:textColor="#31275f"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
