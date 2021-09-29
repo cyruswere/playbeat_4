@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ResultDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        tools:context=".MainActivity">
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="15dp"
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            app:cardElevation="60dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="30dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/frtrackImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/beats" />
+
+                <TextView
+
+                    android:id="@+id/frtrackNameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome"
+                    android:fontFamily="@font/amaranth_italic"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/frTrackDescriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/amaranth_italic"
+                    android:textColor="@color/black"
+                    android:text="So"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/frCollectionName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/amaranth_italic"
+                    android:text="So, this"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/frReleaseDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/amaranth_italic"
+                    android:textColor="@color/black"
+                    android:text="So, this"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/frGenre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/amaranth_italic"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"
+                    android:text="So, this"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/frCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/amaranth_italic"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"
+                    android:text="So, this"
+                    android:textSize="15sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+                    <Button
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/goToWeb"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:background="@drawable/button"
+                        android:text="View on Web" />
+                    <Button
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button"
+                        android:id="@+id/saveToFireBase"
+                        android:layout_width="0dp"
+                        android:textColor="#fff"
+                        android:layout_height="wrap_content"
+                        android:text="Save Favorite" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</FrameLayout>

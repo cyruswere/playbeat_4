@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="saveToFireBase" type="id" />
+    <item name="registerInstead" type="id" />
+    <item name="goToSavedSearch" type="id" />
+</resources>
